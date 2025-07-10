@@ -1,2 +1,2 @@
-# FEUP_COMP
-Project of the UC Compilers. LEIC, Year 3, Semester 2.
+# Compilers
+This repository contains the project of the UC Software Engineer.
