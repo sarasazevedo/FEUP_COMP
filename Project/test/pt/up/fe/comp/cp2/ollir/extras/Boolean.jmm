@@ -1,0 +1,25 @@
+import io;
+
+class BooleanArithmetic {
+
+    public static void main(String[] args) {
+        boolean b;
+        int x;
+
+        b = true;
+
+        if (b) {
+            io.print(42);
+        } else {
+            io.print(0);
+        }
+
+        b = false;
+
+        if (b) {
+            io.print(1);
+        } else {
+            io.print(0);
+        }
+    }
+}

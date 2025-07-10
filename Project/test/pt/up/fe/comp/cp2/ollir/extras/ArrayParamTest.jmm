@@ -1,0 +1,35 @@
+import io;
+
+class ArrayParamTest {
+
+    // duplica cada entrada do array
+    public void doubleAll(int[] a) {
+        int idx;
+        idx = 0;
+        while (idx < a.length) {
+            a[idx] = a[idx] * 2;
+            idx = idx + 1;
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] data; int i;
+        ArrayParamTest tester;
+
+        tester = new ArrayParamTest();
+        data = new int[4];
+        data[0] = 5;
+        data[1] = 6;
+        data[2] = 7;
+        data[3] = 8;
+
+        tester.doubleAll(data);
+
+        // imprime: 10,12,14,16
+        i = 0;
+        while (i < data.length) {
+            io.print(data[i]);
+            i = i + 1;
+        }
+    }
+}

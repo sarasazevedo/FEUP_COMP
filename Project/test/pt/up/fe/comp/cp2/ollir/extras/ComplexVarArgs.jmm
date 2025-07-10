@@ -1,0 +1,11 @@
+
+class VarArgs {
+     int foo ( int a, int b, int ... c ) {
+        return a;
+     }
+
+     int bar () {
+        VarArgs args;
+        return args.foo(0, 1 , 2, 3, 4, 5, 6);
+     }
+}

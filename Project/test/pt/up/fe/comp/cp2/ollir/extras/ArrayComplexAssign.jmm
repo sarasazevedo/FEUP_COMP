@@ -1,0 +1,30 @@
+import ioPlus;
+
+class ArrayComplexAssign {
+
+    public static void main(String[] args) {
+        int[] arr; int i;
+
+        arr = new int[6];
+        // inicializa o array
+        i = 0;
+        while (i < 6) {
+            arr[i] = i + 1;  // 1,2,3,4,5,6
+            i = i + 1;
+        }
+
+        // duplica cada elemento, atribuindo dentro de uma expressão
+        i = 0;
+        while (i < 5) {
+            arr[i+1] = arr[i] * 2;
+            i = i + 1;
+        }
+
+        // imprime todos
+        i = 0;
+        while (i < 6) {
+            ioPlus.printResult(arr[i]);
+            i = i + 1;
+        }
+    }
+}
